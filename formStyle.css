@@ -10,16 +10,17 @@
 } */
 
 .progressBar {
-  margin: 10 auto;
+  margin: 40px auto;
+  max-width: 850px;
   width: 90%;
   background-color: rgb(209, 209, 209);
-  height: 30px;
-  box-shadow: -1px -1px 10px rgb(182, 182, 182);
+  height: 10px;
+  box-shadow: -1px -1px 5px rgb(146, 146, 146);
 }
 
 .the-bar {
   width: 5px;
-  height: 30px;
+  height: 10px;
   background-color: rgb(0, 95, 79);
 }
 .progressIndicator {
@@ -91,6 +92,7 @@ form {
 /* SELECT OPTION DROPDOWN  */
 .select-styled {
   padding: 10px;
+  width: 100%;
   box-shadow: 1px 0px 8px rgb(184, 184, 184);
 }
 .select-styled-required {
@@ -118,6 +120,7 @@ form {
 
 .text-center {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -135,7 +138,7 @@ form {
   display: none;
 }
 
-button {
+/* button {
   appearance: auto;
   text-rendering: auto;
   color: -internal-light-dark(black, white);
@@ -157,8 +160,9 @@ button {
   border-style: outset;
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-image: initial;
-}
+} */
 .green-btn {
+  min-width: 150px;
   background-color: rgb(0, 95, 79);
   color: white;
   border: none;
@@ -170,15 +174,16 @@ button {
   margin: 5px;
   letter-spacing: normal;
   line-height: 17px;
+  /* padding: 29px 13px; */
   padding-bottom: 13px;
   padding-left: 29px;
   padding-right: 29px;
   padding-top: 13px;
   text-align: center;
-  text-indent: 0px;
+  /* text-indent: 0px;
   text-rendering: auto;
   text-shadow: none;
-  text-size-adjust: 100%;
+  text-size-adjust: 100%; */
 }
 
 .gold-btn {
@@ -260,4 +265,14 @@ h2 .free_service {
 .disclaimer h5 {
   color: black;
   font-size: 16px;
+}
+.tcpa-language-slide {
+  color: rgb(141, 141, 141);
+  line-height: 1.6rem;
+  margin: 15px 2px;
+  text-align: left;
+  font-size: 12px;
+}
+.form-group.fw.checkbox {
+  margin: 20px;
 }

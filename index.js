@@ -11,8 +11,10 @@ const form = document.querySelector('#lp_form')
 // form.addEventListener('keydown', preventSubmit)
 window.addEventListener('keydown', preventSubmit)
 function preventSubmit(e) {
+    if (e.keyCode === 13) {
     e.preventDefault()
     e.stopPropagation()
+    }
 }
 
 // handle questions with button 
@@ -152,7 +154,7 @@ agreeInput.addEventListener('change', () => agreeInput.value = 1)
 
 // handel sliders 
 const sliders = document.querySelectorAll(`[type='range']`)
-sliders.forEach(slider => slider.addEventListener('change', displaySliderValue))
+sliders.forEach(slider => slider.addEventListener('input', displaySliderValue))
 
 function displaySliderValue(e) {
     const displayValue = document.querySelector(`#${e.target.id}Text`)
