@@ -62,9 +62,9 @@
                     <a href="https://championlender.com/partner-with-us/" id="top-search">PARTNER WITH US</a>
                     <a href="https://championlender.com/contact-us/" id="top-search">CONTACT US</a>
                     <span style="border-left:1px solid rgb(117, 116, 116);height:100px"></span>
-                    <i class="fas fa-comments" id="speech"></i><a href="tel:401-655-1847" style="color: black;">(401)
-                            655-1847</a>
-                    
+                    <i class="fas fa-comments" id="speech"></i><a href="tel:401-655-1847" style="color: black;">(401) 655-1847</a>
+                   
+                      
 ​
 ​
                 </div>
@@ -249,6 +249,17 @@
             <button class="gold-btn">Go Back</button>
         </div>
 <!-- form box 6 end -->
+<!-- form box 6 end -->
+<div data-field="BANKRUPTCY" class="form-box form-box-6.5" style="display:none;">
+    <h2 class="text-center">Have you had a bankruptcy in the past 7 years?</h2>
+    <div class="form-group text-center">
+        <button data-value="1" class="question green-btn">Yes</button>
+        <button data-value="0" class="question green-btn">No</button>
+    </div>
+    <hr>
+    <button class="gold-btn">Go Back</button>
+</div>
+<!-- form box 6 end -->
 
 <!-- form box 7 start -->
         <div data-field="ANNUAL_VERIFIABLE_INCOME" class="form-box form-box-7" style="display:none;">
@@ -288,7 +299,7 @@
             <h2 class="text-center">State</h2>
 
             <div class="form-group text-center fw">
-                <select class="select-styled" id="PROP_ST" name="PROP_ST" class="form-control fld-center">
+                <select class="select-styled" id="state" name="state" class="form-control fld-center">
                     <option value="" selected="selected">Select State *</option>
                     <option value="AL">AL</option>
                     <option value="AK">AK</option>
@@ -738,7 +749,7 @@
             </p>
             <div class="form-group fw checkbox">
                 <label>
-                    <input type="checkbox" id="opt_in" name="opt_in" /> I agree to terms & conditions *.
+                    <input type="checkbox" id="opt_in-checkbox" name="opt_in-checkbox" /> I agree to terms & conditions *.
                 </label>
             </div>
 
@@ -750,8 +761,8 @@
             <button class=" gold-btn">Go Back</button>
         </div>
 <!-- form box 13 end -->
-
-
+        <input type="hidden" autocomplete="off" name="BANKRUPTCY" id="BANKRUPTCY" />
+        <input type="hidden" autocomplete="off" name="opt_in" id="opt_in" />
         <input type="hidden" autocomplete="off" name="PRODUCT" id="PRODUCT" />
         <input type="hidden" autocomplete="off" name="LOAN_TYPE" id="LOAN_TYPE" />
         <input type="hidden" autocomplete="off" name="PROP_DESC" id="PROP_DESC" />
@@ -766,7 +777,7 @@
         <input type="hidden" id="leadid_token" name="SR_TOKEN" value="" />
         <input type="hidden" name="SR_URL" value="https://championlender.com/" />
         <input type="hidden" name="DOWN_PMT" value="" />
-        <input type="hidden" name="state" value="" />
+        <input type="hidden" name="PROP_ST" value="" />
 
         <textarea name="TCPA_LANGUAGE"
             style="display:none;">By clicking the button below, you acknowledge, consent and agree to the following: a) Our Privacy
@@ -779,7 +790,7 @@ Premier Partners and for SecureRights, parties calling on behalf of Champion Len
 
 
         <input type='hidden' id='AFID' name='AFID' />
-        <input type="hidden" id="PROP_ZIP" name="PROP_ZIP" />
+        <input type="hidden" id="zip_code" name="zip_code" />
 
         <input type='hidden' id='SID' name='SID' value='' />
         <input type='hidden' id='ADID' name='ADID' value='' />

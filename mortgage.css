@@ -175,6 +175,17 @@ li {
   text-decoration: none;
   padding-left: 0.5em;
 }
+.contact-for-support {
+  /* position: relative;
+  transform: translate(60px, -20px);
+  font-size: 0.9em;
+  padding: 1em 1em 1em 1em;
+  color: #222222;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  text-decoration-line: none; */
+}
+
 #top-search {
   font-size: 0.9em;
   padding: 1em 1em 1em 1em;

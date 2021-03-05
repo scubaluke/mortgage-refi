@@ -96,6 +96,7 @@ form {
   box-shadow: 1px 0px 8px rgb(184, 184, 184);
 }
 .select-styled-required {
+  width: 100%;
   padding: 10px;
   border: 2px dashed red;
   box-shadow: 3px 1px 8px red;

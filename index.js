@@ -1,7 +1,7 @@
 // SET AFID 
 document.querySelector('#AFID').value = document.referrer.split('AFID=')[1] || '465368'
 // SET ZIP CODE 
-document.querySelector('#PROP_ZIP').value = document.referrer.split('zipcode=')[1] || '55555'
+document.querySelector('#zip_code').value = document.referrer.split('zipcode=')[1] || '55555'
 
 // THE  FORM ELEMENT 
 const form = document.querySelector('#lp_form')
@@ -33,7 +33,6 @@ function handleClick(e) {
     const formValue = e.target.dataset.value;
 	// console.log({field}, {formValue})
     const input = document.querySelector(`[name=${field}]`)
-	// console.log(input)
 
     // set the value to be submitted
     input.value = formValue
@@ -59,15 +58,15 @@ setBtn.forEach(btn => btn.addEventListener('click', setValue))
             moveProgress()
      }
      if (formElement.dataset.field === 'state') {
-        const state = document.querySelector('#PROP_ST')
+        const state = document.querySelector('#state')
          if (!state.value) {
-            // state.insertAdjacentHTML('afterend', '<p>* Required</p>')
             state.classList.add('select-styled-required')
             state.classList.remove('select-styled')
              return
          } else {
             formElement.style.display = 'none';
             nextFormElement.style.display = 'block'
+            document.querySelector('[name="PROP_ST"]').value = state.value
             moveProgress()
         }
      }
@@ -95,6 +94,10 @@ setBtn.forEach(btn => btn.addEventListener('click', setValue))
  }
 
 
+// set value for "I  agree to terms and conditions"
+const agreeInput = form.querySelector('#opt_in-checkbox')
+agreeInput.addEventListener('click', () => document.querySelector('#opt_in').value = 1)
+
 // submit form
  const submitBtn = document.querySelector('.submit')
  submitBtn.addEventListener('click', sendSubmission)
@@ -109,10 +112,6 @@ setBtn.forEach(btn => btn.addEventListener('click', setValue))
 function emailIsValid (email) {
 	return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
-// set value for "I  agree to terms and conditions"
-const agreeInput = form.querySelector('#opt_in')
-agreeInput.addEventListener('change', () => agreeInput.value = 1)
-
 
      if (formElement.dataset.field === 'contact') {
         if (!form.first_name.value) {
@@ -165,20 +164,26 @@ function displaySliderValue(e) {
 //go back
 const backBtn = document.querySelectorAll('.gold-btn')
 backBtn.forEach(btn => btn.addEventListener('click', goBack))
+function progressBack() {
+    let theBar = document.querySelector('.the-bar')
+    const amountToMove = document.querySelectorAll('.form-box')
+    const distanceToMove = 100 / amountToMove.length 
+    theBar.style.width = `${ moved -= distanceToMove}%`
+}
+
 
 function goBack(e) {
     e.preventDefault()
 
     const formElement = e.target.parentElement
-   
     const prevElement = formElement.previousElementSibling;
     formElement.style.display = 'none'
     prevElement.style.display = 'block'
+    progressBack()
 }
 
 
 // move progress bar
-
 let moved = 1 // progress bar memory
 function moveProgress() {
         let theBar = document.querySelector('.the-bar')
