@@ -10,7 +10,7 @@
 } */
 
 .progressBar {
-  margin: 0 auto;
+  margin: 10 auto;
   width: 90%;
   background-color: rgb(209, 209, 209);
   height: 30px;
@@ -35,7 +35,7 @@ form {
   font-weight: 400;
   max-width: 650px;
   /* width: 650px; */
-  margin: 0 auto;
+  margin: 10px auto;
   margin-bottom: 100px;
   padding: 20px;
   border-radius: 4px;
