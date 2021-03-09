@@ -45,6 +45,7 @@ function handleClick(e) {
 // handle questions with their own field value
 const setBtn = document.querySelectorAll('.next')
 setBtn.forEach(btn => btn.addEventListener('click', setValue))
+
  function setValue(e) {
      e.preventDefault()
      e.stopPropagation()
