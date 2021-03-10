@@ -1,7 +1,7 @@
 // SET AFID 
 document.querySelector('#AFID').value = document.referrer.split('AFID=')[1] || '465368'
 // SET ZIP CODE 
-document.querySelector('#zip_code').value = window.location.split('zipcode=')[1] || '55555'
+document.querySelector('#zip_code').value = window.location.search.split('zipcode=')[1] || '55555'
 
 // THE  FORM ELEMENT 
 const form = document.querySelector('#lp_form')
