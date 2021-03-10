@@ -1,7 +1,7 @@
 // SET AFID 
 document.querySelector('#AFID').value = document.referrer.split('AFID=')[1] || '465368'
 // SET ZIP CODE 
-document.querySelector('#zip_code').value = document.referrer.split('zipcode=')[1] || '55555'
+document.querySelector('#zip_code').value = window.location.split('zipcode=')[1] || '55555'
 
 // THE  FORM ELEMENT 
 const form = document.querySelector('#lp_form')
@@ -113,7 +113,12 @@ agreeInput.addEventListener('click', () => document.querySelector('#opt_in').val
 function emailIsValid (email) {
 	return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
+function validatePhoneNumber(phoneNum) 
+{
+    const check = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
+    return check.test(phoneNum);
+}
      if (formElement.dataset.field === 'contact') {
         if (!form.first_name.value) {
             const fNameInput = form.querySelector('#first_name')
@@ -133,7 +138,7 @@ function emailIsValid (email) {
             emailInput.classList.add('required')
             emailInput.classList.remove('input-styled')
             return
-        }  else if (!form.phone_home.value ) {
+        }  else if (!validatePhoneNumber(form.phone_home.value)) {
             const phoneInput = form.querySelector('#phone_home')
             phoneInput.placeholder = '* (XXX) XXX-XXXX'
             phoneInput.classList.add('required')
