@@ -1,14 +1,19 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 ​
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>ChampionLender</title>
     <link href="mortgage.css" rel="stylesheet" type="text/css" />
+    <link href="dropdown.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="formStyle.css">
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -18,50 +23,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;600&display=swap" rel="stylesheet">
 </head>
 ​
+
 <body>
     <header>
-        <i class="fas fa-envelope" id="header-icon"></i><a href="#" id="header-info"> info@championlender.com</a>
-        <i class="fas fa-map-marker-alt" id="header-icon"></i><a href="#" id="header-info"> 6900 Tavistock Lakes Blvd
-            Suite 400 Orlando, FL 32827</a>
-        <a href="#"><i class="fab fa-facebook-f" id="social"></i></a>
-        <a href="#"><i class="fab fa-instagram" id="social"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in" id="social"></i></a>
-    </header> 
-   
-    <nav>
-        <input id="nav-toggle" type="checkbox">
-        <img src="img/championlogo.png" class="logo" alt="championlogo">
-        <ul class="links">
-            <li><a href="https://championlender.com/about-us/">ABOUT</a></li>
-            <li><div class="dropdown">
-                    <button class="dropbtn">PRODUCTS <i class="fas fa-angle-down"></i></button>
-                    <div class="dropdown-content">
-                      <a href="https://championlender.com/mortgage-loans/"><i class="fas fa-home" id="drop-products"></i>Mortgage Loans</a>
-                      <a href="https://championlender.com/reverse-mortgages/"><i class="fas fa-undo" id="drop-products"></i></i>Reverse Loans</a>
-                      <a href="#"><i class="fas fa-search" id="drop-products"></i>Home Search</a>
-                      <a href="https://championlender.com/personal-loans/"><i class="fas fa-dollar-sign" id="drop-products"></i></i>Personal Loans</a>
-                      <a href="https://championlender.com/business-loans/"><i class="fas fa-clipboard" id="drop-products"></i>Business Loans</a>
-                      <a href="https://championlender.com/auto-loans/"><i class="fas fa-car" id="drop-products"></i>Auto Loans</a>
-                      <a href="https://championlender.com/student-loans/"><i class="fas fa-graduation-cap" id="drop-products"></i>Student Loans</a>
-                      <a href="https://championlender.com/credit-repair/"><i class="fas fa-hand-holding-usd" id="drop-products"></i>Credit Repair</a>
-                      <a href="https://championlender.com/debt-settlement/"><i class="fas fa-file-invoice-dollar" id="drop-products"></i>Debt Settlement</a>
-                    </div>
-                  </div></li>
-            <li><a href="https://championlender.com/blog/">BLOG</a></li>
-            <li><a href="https://championlender.com/partner-with-us/">PARTNER WITH US</a></li>
-            <li><a href="https://championlender.com/contact-us/">CONTACT US</a></li>
-            |
-            <i class="fas fa-comments" id="speech"></i><a href="tel:401-655-1847" style="color: black;">(401)
-                    655-1847</a>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav>
 
 
+        <!-- <div class="flex-container">
+                <img src="img/championlogo.png" class="top-logo" alt="championlogo">
+    ​
+             
+                    <a href="#">HOME</a>
+                    <a href="#">PRODUCTS</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">PARTNER WITH US</a>
+                    <a href="#">CONTACT US</a>
+              
+                <ul class="center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </ul>
+            </div> -->
+        <!-- 
+            <div>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+    ​
+                <a href="#"><i class="fab fa-instagram"></i></a>
+    ​
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="img/championlogo.png" class="top-logo" alt="championlogo">
+                    ​
+
+                    ​
+                    <a href="https://championlender.com/about-us/" id="top-search">ABOUT</a>
+                    <a href="" id="top-search">PRODUCTS</a>
+                    <a href="https://championlender.com/blog/" id="top-search">BLOG</a>
+                    <a href="https://championlender.com/partner-with-us/" id="top-search">PARTNER WITH US</a>
+                    <a href="https://championlender.com/contact-us/" id="top-search">CONTACT US</a>
+                    <span style="border-left:1px solid rgb(117, 116, 116);height:100px"></span>
+                    <i class="fas fa-comments" id="speech"></i><a href="tel:401-655-1847" style="color: black;">(401)
+                        655-1847</a>
+
+
+                    ​
+                    ​
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- <header>
+            <div class="flex-container">
+                <img src="img/championlogo.png" class="top-logo" alt="championlogo">
+                <div class="nav-style">
+                    <a href="#">HOME</a>
+                    <a href="#">PRODUCTS</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">PARTNER WITH US</a>
+                    <a href="#">CONTACT US</a>
+                </div>
+                <ul class="center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </ul>
+            </div>
+        </header> -->
 
     <section class="hero">
 
@@ -70,30 +102,56 @@
     <div class="progressBar">
         <div class="the-bar"></div>
         <!-- <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div>
-        <div class="progressIndicator"></div> -->
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div>
+            <div class="progressIndicator"></div> -->
 
-      </div>
-        
-        <form id="lp_form" name="lp_form" method="post"
-        action="https://chlend.linktrustleadgen.com/Lead/432598/SimplePost">
+    </div>
+
+    <!-- <section class="how"> -->
+
+
+    <!--   <div
+            class="progress-container">
+            <div class="form-progress">
+                <progress class="form-progress-bar" min="0" max="100" value="0" step="1"
+                    aria-labelledby="form-progress-completion"></progress>
+                <div class="form-progress-indicator one active"></div>
+                <div class="form-progress-indicator two active"></div>
+                <div class="form-progress-indicator three active"></div>
+                <div class="form-progress-indicator four active"></div>
+                <div class="form-progress-indicator five"></div>
+                <div class="form-progress-indicator six"></div>
+                <div class="form-progress-indicator seven"></div>
+                <div class="form-progress-indicator eight"></div>
+                <div class="form-progress-indicator nine"></div>
+                <div class="form-progress-indicator ten"></div>
+                <div class="form-progress-indicator eleven"></div>
+                <div class="form-progress-indicator twelve"></div>
+                <div class="form-progress-indicator thirteen"></div>
+                <div class="form-progress-indicator fourteen"></div>
+              <p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">
+                    0% complete</p> 
+            </div>
+        </div> -->
+
+    <form id="lp_form" name="lp_form" method="post" action="https://chlend.linktrustleadgen.com/Lead/437427/SimplePost">
 
         <input type='hidden' id='ResponseFormat' name='ResponseFormat' value='json' />
         <input type='hidden' id='successUrl' name='successUrl' value='https://championlender.com/' />
         <input type='hidden' id='failureUrl' name='failureUrl' value='https://championlender.com/' />
 
- <!-- form box 0 start -->
+         <!-- form box 0 start
         <div data-field="PRODUCT" class="form-box form-box-0">
             <h2 class="text-center">Which type of home loan are you interested in?</h2>
             <div class="form-group text-center">
@@ -102,21 +160,25 @@
                 <button class="question green-btn">New Home Purchase</a></button>
             </div>
         </div>
-  <!-- form box 0 end -->
+      -->
 
- <!-- form box 1 start -->
-        <div data-field="LOAN_TYPE" class="form-box form-box-1" style="display:none;">
-            <h2 class="text-center">Desired interest rate</h2>
+        <!-- form box 1 start -->
+        <div data-field="employment_type" class="form-box form-box-1" >
+            <h2 class="text-center">Are you currently employed?</h2>
             <div class="form-group text-center">
-                <button data-value="FIXED" class="question green-btn">Fixed</button>
-                <button data-value="ADJUSTABLE" class="question green-btn">Adjustable</button>
+                <button data-value=1 class="question green-btn">Full-Time</button>
+                <button data-value=2 class="question green-btn">Part-Time</button>
+                <button data-value=3 class="question green-btn">Self-Employed</button>
+                <button data-value=4 class="question green-btn">Not Employed</button>
+                <button data-value=5 class="question green-btn">Retired</button>
+
             </div>
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
- <!-- form box 1 end -->
+        <!-- form box 1 end -->
 
-<!-- form box 2 start -->
+        <!-- form box 2 start -->
         <div data-field="PROP_DESC" class="form-box form-box-2" style="display:none;">
             <h2 class="text-center">What type of property do you have or are looking for?</h2>
             <div class="form-group text-center">
@@ -129,27 +191,39 @@
             </div>
             <div class="form-group text-center">
                 <button data-value="MANUFACTURED_HOME" class="question green-btn">Mobile Home</button>
-             
+
             </div>
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 2 end -->
+        <!-- form box 2 end -->
 
 
-<!-- form box 3 start -->
+        <!-- form box 3 start -->
         <div data-field="VA_STATUS" class="form-box form-box-3" style="display:none;">
             <h2 class="text-center">Are you Active Duty or Retired Military Service Member?</h2>
             <div class="form-group text-center">
-                <button data-value="YES" class="question green-btn">Yes</button>
-                <button data-value="NO" class="question green-btn">No</button>                               
+                <button data-value="Yes" class="question green-btn">Yes</button>
+                <button data-value="No" class="question green-btn">No</button>
             </div>
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 3 end -->
+        <!-- form box 3 end -->
 
-<!-- form box 4 start -->
+        <!-- form box 3.5 end -->
+        <div data-field="real_estate_agent" class="form-box form-box-6.5" style="display:none;">
+            <h2 class="text-center">Are you currently working with a real estate agent?</h2>
+            <div class="form-group text-center">
+                <button data-value="Yes" class="question green-btn">Yes</button>
+                <button data-value="No" class="question green-btn">No</button>
+            </div>
+            <hr>
+            <button class="gold-btn">Go Back</button>
+        </div>
+        <!-- form box 3.5 end -->
+
+        <!-- form box 4 start -->
         <div data-field="CRED_GRADE" class="form-box form-box-4" style="display:none;">
             <h2 class="text-center">How would you rate your credit?</h2>
             <div class="form-group text-center">
@@ -163,68 +237,73 @@
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 4 enc -->
+        <!-- form box 4 enc -->
 
-<!-- form box 5 start -->
+        <!-- form box 5 start -->
         <div data-field="FHA_BANK_FORECLOSURE" class="form-box form-box-5" style="display:none;">
-            <h2 class="text-center">Have you ever had a foreclosure?</h2>
+            <h2 class="text-center">Have you ever had a foreclosure or filed for bankruptcy in the past 7 years??</h2>
             <div class="form-group text-center">
-                <button data-value="yes" class="question green-btn">Yes</button>
-                <button data-value="no" class="question green-btn">No</button>
+                <button data-value="Yes" class="question green-btn">Yes</button>
+                <button data-value="No" class="question green-btn">No</button>
+            </div>
+            <div class="form-group text-center">
+                <button data-value="Both" class="question green-btn">Both</button>
             </div>
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 5 end -->
+         <!-- form box 5 end -->
 
-
-<!-- form box 6 end -->
-        <div data-field="NUM_MORTGAGE_LATES" class="form-box form-box-6" style="display:none;">
-            <h2 class="text-center">Have you made any mortgage payments late?</h2>
+        <!-- form box 5.5 end -->
+        <div data-field="home_found" class="form-box form-box-6.5" style="display:none;">
+            <h2 class="text-center">Have you already found your new home?</h2>
             <div class="form-group text-center">
-                <button data-value="NONE" class="question green-btn">None</button>
-                <button data-value="ONE" class="question green-btn">One</button>
-            </div>
-            <div class="form-group text-center">
-                <button data-value="TWO_OR_MORE" class="question  green-btn">Two Or More</button>      
+                <button data-value="Yes" class="question green-btn">Yes</button>
+                <button data-value="No" class="question green-btn">No</button>
             </div>
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 6 end -->
-<!-- form box 6.5 start -->
-<div data-field="BANKRUPTCY" class="form-box form-box-6.5" style="display:none;">
-    <h2 class="text-center">Have you had a bankruptcy in the past 7 years?</h2>
-    <div class="form-group text-center">
-        <button data-value="1" class="question green-btn">Yes</button>
-        <button data-value="0" class="question green-btn">No</button>
-    </div>
-    <hr>
-    <button class="gold-btn">Go Back</button>
-</div>
-<!-- form box 6.5 end -->
+        <!-- form box 5.5 end -->
 
-<!-- form box 7 start -->
-        <div data-field="ANNUAL_VERIFIABLE_INCOME" class="form-box form-box-7" style="display:none;">
+
+        <!-- form box 6 end -->
+        <div data-field="first_purchase" class="form-box form-box-6" style="display:none;">
+            <h2 class="text-center">Is this your first time buying a home?</h2>
+            <div class="form-group text-center">
+                <button data-value="Yes" class="question green-btn">Yes</button>
+                <button data-value="No" class="question green-btn">No</button>
+            </div>
+            <hr>
+            <button class="gold-btn">Go Back</button>
+        </div>
+        <!-- form box 6 end -->
+
+        <!-- form box 7 start -->
+        <div data-field="SPEC_HOME" class="form-box form-box-7" style="display:none;">
             <h2 class="text-center">Annual Verifiable Income?</h2>
 
             <div class="form-group text-center">
-                <button data-value="YES" class="question green-btn">Yes</button>
-                <button data-value="NO" class="question green-btn">No</button>
+                <button data-value=1 class="question green-btn">Primary Home</button>
+                <button data-value=2 class="question green-btn">Secondary/Vacation Home</button>
+            </div>
+            <div class="form-group text-center">
+                <button data-value=3 class="question green-btn">Rental Property</button>
             </div>
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form-box-7 end -->
+        <!-- form-box-7 end -->
 
-<!-- form box 8 end -->
+        <!-- form box 8 end -->
         <div data-field="BUY_TIMEFRAME" class="form-box form-box-8" style="display:none;">
             <h2 class="text-center">What is your timeframe?</h2>
             <div class="form-group text-center">
                 <button data-value="immediately" class="question  green-btn">Immediately</button>
                 <button data-value="30_days" class="question  green-btn">30 days</button>
             </div>
-            <div class="form-group text-center"> <button data-value="60_days" class=" question  green-btn">60 days</button>
+            <div class="form-group text-center"> <button data-value="60_days" class=" question  green-btn">60
+                    days</button>
                 <button data-value="90_days" class="question  green-btn">90 days</button>
             </div>
             <div class="form-group text-center">
@@ -234,15 +313,18 @@
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 8 end -->
+        <!-- form box 8 end -->
 
-<!-- form box 9 start -->
+        <!-- form box 9 start -->
         <div data-field="state" class="form-box form-box-9" style="display:none;">
-
+            <h2 class="text-center">In what city will the property be located?</h2>
+            <div class="form-group text-center fw">
+                <input type="text" name="PROP_ZIP" id="PROP_ZIP" class="form-control fld-center" placeholder="City *">
+            </div>
             <h2 class="text-center">State</h2>
 
             <div class="form-group text-center fw">
-                <select class="select-styled" id="state" name="state" class="form-control fld-center">
+                <select class="select-styled" id="PROP_ST" name="PROP_ST" class="form-control fld-center">
                     <option value="" selected="selected">Select State *</option>
                     <option value="AL">AL</option>
                     <option value="AK">AK</option>
@@ -303,9 +385,9 @@
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 9 end -->
+        <!-- form box 9 end -->
 
- <!-- form box 10 start -->
+        <!-- form box 10 start -->
         <div data-field="propertyValue" class="form-box form-box-10" style="display:none;">
 
             <h2 class="text-center" style="font-size: 20px;margin-bottom:0px;">Please estimate the value
@@ -317,16 +399,16 @@
                 </label>
             </div>
             <div id="myRangeTextContainer" class="text-center"><span id="EST_VALText">$500000</span></div>
-        
-            <h1 class="text-center" style="font-size: 20px;margin-bottom:0px;">What is the remaining 1st
-                mortgage balance?</h1>
+
+            <h1 class="text-center" style="font-size: 20px;margin-bottom:0px;">How much are you putting down as a down
+                payment?</h1>
             <div class="form-group text-center">
                 <label class="slider-label">
                     <input type="range" min="0" max="1000000" value="0" step="50000"
-                        class="slider form-control custom-space" id="BAL_ONE" name="BAL_ONE">
+                        class="slider form-control custom-space" id="DOWN_PMT" name="DOWN_PMT">
                 </label>
             </div>
-            <div id="myRangeTextContainer" class="text-center"><span id="BAL_ONEText">$0</span></div>
+            <div id="myRangeTextContainer" class="text-center"><span id="DOWN_PMTText">$0</span></div>
 
             <div class="form-group text-center">
                 <button class="next green-btn">Continue</button>
@@ -334,30 +416,29 @@
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 10 end -->
+        <!-- form box 10 end -->
 
-<!-- form box 11 start -->
-        <div data-field="additionalCash" class="form-box form-box-11" style="display:none;">
+        <!-- form box 11 start -->
+        <div data-field="annualIncome" class="form-box form-box-11" style="display:none;">
 
-            <h2 class="text-center">Would you like to borrow additional cash?</h2>
+            <h2 class="text-center">What is your combined annual household income?</h2>
             <div class="form-group text-center">
                 <label class="slider-label">
-                    <input type="range" min="0" max="200000" value="0" step="10000"
-                        class="slider form-control" id="ADD_CASH" name="ADD_CASH">
+                    <input type="range" min="0" max="200000" value="0" step="10000" class="slider form-control"
+                        id="income_amount" name="income_amount">
                 </label>
             </div>
-            <div id="myRangeTextContainer" class="text-center"><span id="ADD_CASHText">$0</span></div>
-    
+            <div id="myRangeTextContainer" class="text-center"><span id="income_amountText">$0</span></div>
+
             <div class="form-group text-center">
                 <button class="next green-btn">Continue</button>
             </div>
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 11 enc -->
+        <!-- form box 11 end -->
 
-
-<!-- form box 12 start -->
+        <!-- form box 12 start -->
         <div data-field="address" class="form-box form-box-12" style="display:none;">
             <h2 class="text-center">What is Your Current Address?</h2>
             <div class="form-group text-center fw">
@@ -369,7 +450,8 @@
                     placeholder="City *">
             </div>
             <div class="form-group text-center fw">
-        
+                <input type="text" name="zip_code" id="zip_code" class="form-control fld-center"
+                    placeholder="Zip Code *">
             </div>
             <div class="form-group text-center fw">
                 <select class="select-styled" id="country" name="country" class="form-control fld-center">
@@ -623,9 +705,9 @@
             <hr>
             <button class="gold-btn">Go Back</button>
         </div>
-<!-- form box 12 start -->
+        <!-- form box 12 start -->
 
-  <!-- form box 13 start -->
+        <!-- form box 13 start -->
         <div data-field="contact" class="form-box form-box-13" style="display:none;">
             <h2 class="text-center">How can we contact you?</h2>
             <div class="form-group text-center fw">
@@ -637,12 +719,12 @@
                     placeholder="Last Name *">
             </div>
             <div class="form-group text-center fw">
-                <input type="email" name="email_address" id="email_address"
-                    class="input-styled form-control fld-center" placeholder="Email Address *">
+                <input type="email" name="email_address" id="email_address" class="input-styled form-control fld-center"
+                    placeholder="Email Address *">
             </div>
             <div class="form-group text-center fw">
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone_home" id="phone_home" class=" input-styled form-control fld-center"
-                    placeholder="Phone Home *">
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone_home" id="phone_home"
+                    class=" input-styled form-control fld-center" placeholder="Phone Home *">
             </div>
             <div class="form-group text-center fw">
                 <input type="text" name="phone_work" id="phone_work" class="input-styled form-control fld-center"
@@ -653,7 +735,8 @@
                     placeholder="Cell Phone">
             </div>
             <div class="form-group text-center fw">
-                <select class="select-styled" id="best_time" name="best_time" class="input-styledform-control fld-center">
+                <select class="select-styled" id="best_time" name="best_time"
+                    class="input-styledform-control fld-center">
                     <option value="" selected="selected">Select Best Time To Call</option>
                     <option value="M">Morning</option>
                     <option value="A">Afternoon</option>
@@ -692,7 +775,8 @@
             </p>
             <div class="form-group fw checkbox">
                 <label>
-                    <input type="checkbox" id="opt_in-checkbox" name="opt_in-checkbox" /> I agree to terms & conditions *.
+                    <input type="checkbox" id="opt_in-checkbox" name="opt_in-checkbox" /> I agree to terms & conditions
+                    *.
                 </label>
             </div>
 
@@ -703,34 +787,36 @@
             <hr>
             <button class=" gold-btn">Go Back</button>
         </div>
-<!-- form box 13 end -->
-
-        <input type="hidden" autocomplete="off" name="BANKRUPTCY" id="BANKRUPTCY" />
-        <input type="hidden" autocomplete="off" name="opt_in" id="opt_in" />
-        <input type="hidden" autocomplete="off" name="PRODUCT" id="PRODUCT" />
-        <input type="hidden" autocomplete="off" name="LOAN_TYPE" id="LOAN_TYPE" />
+        <!-- form box 13 end -->
+        <input type="hidden" autocomplete="off" name="employment_type" id="employment_type" />
+        <input type="hidden" autocomplete="off" name="first_purchase" id="first_purchase" />
         <input type="hidden" autocomplete="off" name="PROP_DESC" id="PROP_DESC" />
         <input type="hidden" autocomplete="off" name="VA_STATUS" id="VA_STATUS" />
         <input type="hidden" autocomplete="off" name="CRED_GRADE" id="CRED_GRADE" />
-        <input type="hidden" autocomplete="off" name="FHA_BANK_FORECLOSURE" id="FHA_BANK_FORECLOSURE" />
-        <input type="hidden" autocomplete="off" name="NUM_MORTGAGE_LATES" id="NUM_MORTGAGE_LATES" />
+        <input type="hidden" autocomplete="off" name="real_estate_agent" id="real_estate_agent" />
+        <input type="hidden" autocomplete="off" name="SPEC_HOME" id="SPEC_HOME" />
+        <input type="hidden" autocomplete="off" name="home_found" id="home_found" />
         <input type="hidden" autocomplete="off" name="BUY_TIMEFRAME" id="BUY_TIMEFRAME" />
-
-        <input type="hidden" name="ANNUAL_VERIFIABLE_INCOME" value="" />
+        <input type="hidden" autocomplete="off" name="FHA_BANK_FORECLOSER" id="FHA_BANK_FORECLOSER" />
+        <input type="hidden" autocomplete="off" name="PROP_ST" id="PROP_ST" />
+        <input type="hidden" name="income_amount" value="" />
         <input type="hidden" name="SPEC_HOME" value="YES" />
-        <input type="hidden" id="leadid_token" name="SR_TOKEN" value="" />
+        <input type="hidden" id="leadid_token" name="universal_leadid" type="hidden" value="" />
         <input type="hidden" name="SR_URL" value="https://championlender.com/" />
+        <input type="hidden" name="PROP_ZIP" value="" />
         <input type="hidden" name="DOWN_PMT" value="" />
-        <input type="hidden" name="PROP_ST" value="" />
+        <input type="hidden" name="EST_VAL" value="" />
+
+        <input type="hidden" name="state" value="" />
 
         <textarea name="TCPA_LANGUAGE"
             style="display:none;">By clicking the button below, you acknowledge, consent and agree to the following: a) Our Privacy
-Policy and consent to receive notices and other communications electronically from Champion Lender
-(a Champion Leads LLC Brand) SecureRights and our Premier Partners;
-b) We take your privacy
-seriously. You are providing express written consent for Champion Lender (a Champion Leads LLC
-Brand) SecureRights and our Premier Partners to share your information with up to four (4) of its
-Premier Partners and for SecureRights, parties calling on behalf of Champion Lender (a Champion Leads LLC Brand) SecureRights and our Premier Partners or authorized third parties on their behalf to contact you (including through automated means; e.g. autodialing, text and pre-recorded messaging) about financial services or other credit related offers via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone number is currently listed on any state, federal, local or corporate Do Not Call list; c) Consent to be contacted is not required in order to purchase goods or services from Champion Lender (a Champion Leads LLC Brand) SecureRights and our Premier Partners that contact you. You may choose to speak with an individual service provider by dialing (888) 883-2062; d) That I have received and reviewed the Mortgage Broker Disclosures for my state; and e) You are providing written consent under the Fair Credit Reporting Act for Champion Lender (a Champion Leads LLC Brand) SecureRights and our Premier Partners to obtain information from your personal credit profile. You authorize Champion Lender (a Champion Leads LLC Brand) SecureRights and our Premier Partners to obtain such information solely to prequalify you for credit options and connect you with an appropriate lending partner. SecureRights NMLS 3175.</textarea>
+    Policy and consent to receive notices and other communications electronically from Champion Lender
+    (a Champion Leads LLC Brand) SecureRights and our Premier Partners;
+    b) We take your privacy
+    seriously. You are providing express written consent for Champion Lender (a Champion Leads LLC
+    Brand) SecureRights and our Premier Partners to share your information with up to four (4) of its
+    Premier Partners and for SecureRights, parties calling on behalf of Champion Lender (a Champion Leads LLC Brand) SecureRights and our Premier Partners or authorized third parties on their behalf to contact you (including through automated means; e.g. autodialing, text and pre-recorded messaging) about financial services or other credit related offers via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone number is currently listed on any state, federal, local or corporate Do Not Call list; c) Consent to be contacted is not required in order to purchase goods or services from Champion Lender (a Champion Leads LLC Brand) SecureRights and our Premier Partners that contact you. You may choose to speak with an individual service provider by dialing (888) 883-2062; d) That I have received and reviewed the Mortgage Broker Disclosures for my state; and e) You are providing written consent under the Fair Credit Reporting Act for Champion Lender (a Champion Leads LLC Brand) SecureRights and our Premier Partners to obtain information from your personal credit profile. You authorize Champion Lender (a Champion Leads LLC Brand) SecureRights and our Premier Partners to obtain such information solely to prequalify you for credit options and connect you with an appropriate lending partner. SecureRights NMLS 3175.</textarea>
 
 
         <input type='hidden' id='AFID' name='AFID' />
@@ -740,20 +826,22 @@ Premier Partners and for SecureRights, parties calling on behalf of Champion Len
         <input type='hidden' id='ADID' name='ADID' value='' />
         <input type='hidden' id='ClickID' name='ClickID' value='' />
         <input type='hidden' id='AffiliateReferenceID' name='AffiliateReferenceID' value='' />
-<!-- todo: ip address -->
+        <!-- todo: ip address -->
         <input type='hidden' id='IPAddress' name='IPAddress' value='' />
         <!-- <script>
-            document.querySelector('#AFID').value = document.referrer.split('?AFID=')[1] || '465368'
-        </script> -->
+                document.querySelector('#AFID').value = document.referrer.split('?AFID=')[1] || '465368'
+            </script> -->
+
+        <input id="leadid_token" name="universal_leadid" type="hidden" value="" />
 
     </form>
 
 
 
 
-        <div class="flex-container">
+    <div class="flex-container">
 
-        </div>
+    </div>
     </section>
 
     <section class="who">
@@ -899,20 +987,12 @@ Premier Partners and for SecureRights, parties calling on behalf of Champion Len
 
     </footer>
 
-
-        <script src="./index.js"></script>
-        <script id="LeadiDscript" type="text/javascript">
-            (function() {
-            var s = document.createElement('script');
-            s.id = 'LeadiDscript_campaign';
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = '//create.lidstatic.com/campaign/cd215e19-865f-3649-c858-0b6646c7cfa9.js?snippet_version=2';
-            var LeadiDscript = document.getElementById('LeadiDscript');
-            LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
-            })();
-            </script>
-            <noscript><img src='//create.leadid.com/noscript.gif?lac=5a78319c-dbbd-54af-cb0a-a61a01c27aa9&lck=cd215e19-865f-3649-c858-0b6646c7cfa9&snippet_version=2' /></noscript>
+    <script id=“LeadiDscript” type=“text/javascript”> (function() { var s=document.createElement(‘script’);
+        s.id=‘LeadiDscript_campaign’; s.type=‘text/javascript’; s.async=true;
+        s.src=‘//create.lidstatic.com/campaign/b27634ee-7a20-1672-8d36-d01cb06db3bf.js?snippet_version=2’; var
+        LeadiDscript=document.getElementById(‘LeadiDscript’); LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+        })(); </script> <noscript><img src=‘//create.leadid.com/noscript.gif?lac=5a78319c-dbbd-54af-cb0a-a61a01c27aa9&lck=b27634ee-7a20-1672-8d36-d01cb06db3bf&snippet_version=2’ /></noscript>
+    <script src="./index.js"></script>
 
 </body>
 
